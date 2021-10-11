@@ -1,18 +1,134 @@
-function getRandomImage() {  
+var basket =[]
+var openModal= function(){
+  
+    basket.forEach(function(product) {
+        var tr = $("#trb");
+        
+         //  tr.append('<td> <img src='+ product['image'] + '></td>'); 
+    tr.append('<tr><td> '+ product['name'] + '</td> <td> '+ product['Price'] + '</td></tr>'); 
+          
+    });
+   
+   
+}
+var closeModal = function(){
+  
+   $("#trb").children().remove()
+}
 
-    var randomImage = [];  
-      
-    //insert the URL of images in array  
-    randomImage[0] =  "https://www.dreamsfashion.net/images/thumbs/0001410_gilet-longue-pour-femme-voilee_415.jpeg"    ;  
-    randomImage[1] = "http://www.turkishfashion.net/re_collections/1494507448_offer_18301089_1634134253293484_3104151848083476385_n.jpg";  
-    randomImage[2] =  "https://www.tesetturgiyimmodelleri.com/wp-content/uploads/2018/05/alvina-kapusonlu-esofman-tunik.jpg"    ;  
-    randomImage[3] = "https://i.pinimg.com/474x/e0/23/9e/e0239e23daed51356eeab1944ee013e9.jpg";  
-    randomImage[4] =  "https://i.pinimg.com/originals/3c/1b/0a/3c1b0a9adc8a9f05c2fe16a5e34490ac.jpg"    ;  
+     var collection = [];
+     collection[0] =  "./image/im.jpg"    ;  
+     collection[1] = "./image/im.jpg";  
+     collection[2] =  "./image/im.jpg"    ;  
+     collection[3] = "./image/im.jpg";  
+     collection[4] =  "./image/im.jpg"    ;  
      
-    var number = Math.floor(Math.random()*randomImage.length);  
-       
-    return document.getElementById("result").innerHTML = '<img src="'+randomImage[number]+'" />';  
-    }  
+     var Products = [
+     
+        product1={
+        name: "Alvina",
+        Price:100,
+        image:collection[0]
+        }
+        ,
+        product2={
+        name: "Kayra",
+        Price:150,
+        image:collection[1]
+            
+        },
+            
+        product3={
+        name: "kareena",
+        Price:200,
+        image:collection[2]
+                },
+        
+        product4={
+        name: "modanisa",
+        Price:300,
+        image:collection[3]
+        },
+        product5={
+        name: "zara",
+        Price:250,
+        image:collection[4]
+                        }
+        ]
+          
+     function addToBasket(product){
+        
+        
+      
+        this.basket.push(product);
+      
+    }
+        
+        
+     var addProduct1 = function(){
+
+            
+            addToBasket(Products[0]);
+            
+            
+            };
+            var addProduct2 = function(){
+
+               
+                addToBasket(Products[1]);
+                
+                
+                };
+                var addProduct3 = function(){
+
+                   
+                    addToBasket(Products[2]);
+                    
+                    
+                    };
+                    var addProduct4 = function(){
+
+                        
+                        addToBasket(Products[3]);
+                        
+                        
+                        };
+    
+   
+     
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,121 @@
+body{
+  background-color: rgb(211, 196, 219);
+  font-family:sans-serif;
+  }
+  
+  
+  
+ 
+    
+    
+    .tf {
+      background: #f34d35;
+      text-transform: uppercase;
+      text-align: right;
+      font-size: 1.2em;  
+    }
+    
+    .tf p {
+      color: #fff;
+      font-weight: bold;
+    }
+    
+   
+    
+    .col-qty > * {
+      vertical-align: middle; 
+    }
+    
+    .col-qty > input {
+      max-width: 2.6em;
+    }
+    
+    
+    a.qty {
+      width: 1em;
+      line-height: 1em;
+      border-radius: 2em;
+      font-size: 2.5em;
+      font-weight: bold;
+      text-align: center;
+      background: #43ace3;  
+      color: #fff;
+    }
+    
+    a.qty:hover {
+      background: #3b9ac6;
+    }
+    
+    .btn {
+      padding: 10px 30px;
+      border-radius: 0.3em;
+      font-size: 1.4em;
+      font-weight: bold;
+     
+      color: coral;
+     
+    }
+    
+    .btn:hover {
+      box-shadow: 0 3px 0 rgba(59,154,198, 0)
+    }
+    
+    .btn-update {
+      float: right;
+      margin: 0 0 1.5em 0;
+    }
+    
+    .transition {
+      transition: all 0.3s ease-in-out;
+    }
+    
+    @media screen and ( max-width: 755px) {
+      .container {
+        width: 98%;
+      }
+      
+      .col-pro {
+        width: 35%;
+      }
+      
+      .col-qty {
+        width: 22%;
+      }
+      
+      img {
+        max-width: 100%;
+        margin-bottom: 1em;
+      }
+    }
+    
+    @media screen and ( max-width: 591px) {
+      
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
